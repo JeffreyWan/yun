@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lease_list_item_select"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <!-- 手机 -->
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_label_text"
+            android:textColor="#ff646464" />
+
+        <TextView
+            android:id="@+id/phone_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/phone_label"
+            android:textColor="#ff646464" />
+
+        <!-- 时间 -->
+
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_label"
+            android:text="@string/time_label_text"
+            android:textColor="#ff646464" />
+
+        <TextView
+            android:id="@+id/time_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_content"
+            android:layout_toRightOf="@id/time_label"
+            android:textColor="#ff646464" />
+
+        <!-- 状态标签 -->
+
+        <TextView
+            android:id="@+id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_label"
+            android:text="@string/status_label_text"
+            android:textColor="#ff646464" />
+        <!-- 状态图标 -->
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/status_label"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/status_label" />
+
+        <!-- 箭头 -->
+
+        <ImageView
+            android:id="@+id/arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/status"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/lease_list_item_arraw_unsp" />
+    </RelativeLayout>
+    <!-- 下拉 -->
+
+    <LinearLayout
+        android:id="@+id/details_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:background="@drawable/lease_list_item_detail"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:id="@+id/deleteLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@style/radion_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/lease_list_btn_delete"
+                    android:text="@string/delete_text"
+                    android:textColor="#ff646464" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/details"
+                    style="@style/radion_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/lease_list_item_arraw_unsp"
+                    android:paddingRight="0dp"
+                    android:text="@string/details_text"
+                    android:textColor="#ff646464" />
+               
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="item1">实时定位</string>
+    <string name="item2">暂无选项</string>
+    <string name="item3">信息上传</string>
+    <string name="item4">暂无选项</string>
+    <string name="item5">信息下载</string>
+    <string name="item6">暂无选项</string>
+    <string name="item7">系统设置</string>
+    <string name="item8">暂无选项</string>
+    <string name="item9">退出系统</string>
+    <string name="title_activity_download">DownloadActivity</string>
+    <string name="soft_update_no">目前已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_message_image">MessageImageActivity</string>
+    <string name="back">返回</string>
+
+    <!-- register.xml -->
+    <string name="app_name">现场管理系统</string>
+    <string name="infophone_hint">请输入手机号码</string>
+    <string name="registerBtn_text">立即绑定 </string>
+
+    <!-- position.xml -->
+    <string name="submitBtn_text">立即签到 </string>
+
+    <!-- message_list.xml -->
+    <string name="title_label_text"> 消息主题：</string>
+    <string name="content_label_text">消息内容： </string>
+    <string name="publish_time_label_text">发布时间： </string>
+    <string name="delete_text">删除</string>
+    <string name="details_text">详情 </string>
+
+    <!-- list_item.xml -->
+    <string name="phone_label_text">手机：</string>
+    <string name="time_label_text">时间：</string>
+    <string name="status_label_text">状态：</string>
+
+    <!-- updateinformation.xml -->
+    <string name="spot_detail_text">现场详情</string>
+    <string name="companyname_text">公司名称</string>
+    <string name="contactperson_text">联系人</string>
+    <string name="contactphone_text">联系方式</string>
+    <string name="pendingthings_text">待办事由</string>
+    <string name="workresults_text">工作结果</string>
+    <string name="otherremark_text">其他备注</string>
+    <string name="image_text">图片信息</string>
+    <string name="imageBtn_text">拍照</string>
+    <string name="voice_text">语音信息</string>
+    <string name="bt_voice_start_text">录音</string>
+    <string name="bt_voice_src_text">播放</string>
+    <string name="bt_voice_stop_text">停止</string>
+    <string name="updateBtn_text">保存</string>
+    <string name="submitBtn2_text">提交</string>
+
+    <!-- activity_message.xml -->
+
+    <string name="message_detail_text">消息详情</string>
+    <string name="image_message_text">图片消息：</string>
+    <string name="voice_message_text">语音消息：</string>
+
+    <string name="image_detail">图片信息</string>
+    
+    <!-- change_password.xml -->
+    <string name="checkPassword">密码修改</string>
+    <string name="change_password_old_text">请输入原始密码</string>
+    <string name="change_password_new_text">请输入新密码</string>
+    <string name="change_password_new_two_text">请输入确认密码</string>
+    <string name="sureBtn_text">确认</string>
+    <string name="cancelBtn_text">取消</string>
+
+    <!-- download.xml -->
+    <string name="spot_message_text">现场支持</string>
+
+    <!-- information_list.xml -->
+    <string name="spot_information_text">现场信息</string>
+
+    <!-- login.xml -->
+    <string name="userlogin">用户登录</string>
+    <string name="driver_login_username">填写用户名</string>
+    <string name="driver_login_password">填写密码</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="auto_login">自动登录</string>
+    <string name="save_pwd">保存密码</string>
+
+    <!-- more。xml -->
+    <string name="more_text">更多</string>
+    <string name="yewuinfo_text">业务信息</string>
+    <string name="help_text">帮助</string>
+    <string name="update_text">更新</string>
+    <string name="current_version_label_text">当前版本:</string>
+    <string name="current_version_text">2.3</string>
+
+    <!-- help。xml -->
+    <string name="help_content">现场管理系统  利用移动信息化的手段解决了外勤人员的考勤签到情况、外勤人员的工作情况、系统发布的消息接收等公司管理问题。最简单易用的手机操作，随时随地的上报外勤工作。实现考勤签到，数据采集，拍照上传，语音上传，查看系统发布消息等功能。</string>
+    <string name="copyright_text">Copyright@CY研发团队</string>
+    
+    <!-- 版权所有 -->
+    <string name="allright">All Rights Reserved.</string>
+    <string name="copyright">Copyright ©S CY研发团队.</string>
+    <string name="shanghai">CY研发团队   版权所有</string>
+
+</resources>

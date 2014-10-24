@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lease_list_item_select"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <!-- 消息主题 -->
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_label_text"
+            android:textColor="#ff646464" />
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/title_label"
+            android:textColor="#ff646464" />
+        <!-- 状态 -->
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/message_title"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/meikan" />
+
+        <!-- 消息内容 -->
+
+        <TextView
+            android:id="@+id/content_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_label"
+            android:text="@string/content_label_text"
+            android:textColor="#ff646464" />
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_title"
+            android:layout_toRightOf="@id/content_label"
+            android:textColor="#ff646464" />
+
+        <!-- 发布时间 -->
+
+        <TextView
+            android:id="@+id/publish_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_label"
+            android:text="@string/publish_time_label_text"
+            android:textColor="#ff646464" />
+
+        <TextView
+            android:id="@+id/publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/publish_time_label"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/publish_time_label"
+            android:textColor="#ff646464" />
+
+        <!-- 箭头 -->
+
+        <ImageView
+            android:id="@+id/arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/publish_time"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/lease_list_item_arraw_unsp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/details_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:background="@drawable/lease_list_item_detail"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:id="@+id/deleteLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@style/radion_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/lease_list_btn_delete"
+                    android:text="@string/delete_text"
+                    android:textColor="#ff646464" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/details"
+                    style="@style/radion_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/lease_list_item_arraw_unsp"
+                    android:text="@string/details_text"
+                    android:textColor="#ff646464" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

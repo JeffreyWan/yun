@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/customer_main_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tlj_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="28dip"
+        android:background="@drawable/reg_input_01" >
+
+        <EditText
+            android:id="@+id/infophone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_user"
+            android:drawablePadding="10dip"
+            android:hint="请输入手机号码"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColor="#ff98bede" />
+
+        <Button
+            android:id="@+id/btn_clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_clear_text" />
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/reg_btnbg"
+            android:text="立即绑定"
+            android:textColor="@color/white_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
